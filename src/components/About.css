@@ -1,0 +1,9 @@
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+.about-body p { color: var(--dim); line-height: 1.9; margin-bottom: 1rem; font-size: 0.95rem; }
+.about-body strong { color: var(--light); font-weight: 600; }
+.skill-group { margin-bottom: 1.25rem; }
+.skill-label {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem;
+}
+@media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; gap: 3rem; } }

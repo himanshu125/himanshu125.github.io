@@ -1,0 +1,13 @@
+.edu-list { display: flex; flex-direction: column; gap: 1px; background: var(--border); border: 1px solid var(--border); }
+.edu-row {
+    background: var(--black);
+    display: grid; grid-template-columns: 160px 1fr auto;
+    align-items: center; gap: 2rem; padding: 1.5rem 2rem;
+    transition: background 0.2s;
+}
+.edu-row:hover { background: var(--black2); }
+.edu-yr { font-size: 0.78rem; font-family: 'JetBrains Mono', monospace; color: var(--muted); }
+.edu-deg { font-size: 0.95rem; font-weight: 600; color: #fff; margin-bottom: 0.2rem; }
+.edu-school { font-size: 0.82rem; color: var(--subtle); }
+.edu-score { font-size: 0.8rem; font-weight: 700; color: var(--gold); font-family: 'JetBrains Mono', monospace; white-space: nowrap; }
+@media (max-width: 768px) { .edu-row { grid-template-columns: 1fr; gap: 0.4rem; } }

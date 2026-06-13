@@ -1,0 +1,23 @@
+.timeline { position: relative; }
+.timeline::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 1px; background: var(--border);
+}
+.t-item { position: relative; padding-left: 2rem; margin-bottom: 3rem; }
+.t-item:last-child { margin-bottom: 0; }
+.t-item::before {
+    content: ''; position: absolute; left: -4px; top: 0.5rem;
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--black); border: 1.5px solid var(--gold);
+}
+.t-meta { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.4rem; }
+.t-date { font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; color: var(--muted); }
+.t-now {
+    font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid var(--gold); border-radius: 2px;
+    color: var(--gold); text-transform: uppercase;
+}
+.t-company { font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 0.2rem; }
+.t-role { font-size: 0.85rem; color: var(--subtle); margin-bottom: 0.7rem; }
+.t-desc { font-size: 0.875rem; color: var(--dim); line-height: 1.85; }

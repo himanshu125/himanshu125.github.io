@@ -1,0 +1,18 @@
+.proj-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1px; background: var(--border); border: 1px solid var(--border);
+}
+.proj-card { background: var(--black); padding: 2rem; transition: background 0.2s; }
+.proj-card:hover { background: var(--black2); }
+.proj-card:hover .proj-arrow { color: var(--gold); transform: translate(3px, -3px); }
+.proj-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.25rem; }
+.proj-type {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--muted);
+}
+.proj-arrow {
+    color: var(--border); font-size: 1.2rem; text-decoration: none;
+    transition: color 0.2s, transform 0.2s; line-height: 1; display: block;
+}
+.proj-title { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 0.6rem; }
+.proj-desc { font-size: 0.845rem; color: var(--dim); line-height: 1.75; margin-bottom: 1rem; }
